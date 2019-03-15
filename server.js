@@ -29,7 +29,7 @@ app.get('/get-clients', (req, res) => {
         name: 'Amazon', 
         email: "JeffBezos@gmail.com", 
         phoneNumber: "123-234-3456", 
-        projectStatus: "Planning"
+        projectStatus: "In Progress"
      }
     ]
     console.log(`responding with data for clients ${clients[0].name}, ${clients[1].name}, and ${clients[2].name}`)
