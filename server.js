@@ -32,6 +32,7 @@ app.get('/get-clients', (req, res) => {
         projectStatus: "Planning"
      }
     ]
+    console.log(`responding with data for clients ${clients[0].name}, ${clients[1].name}, and ${clients[2].name}`)
     res.send(clients);
 })
 app.post('/post-data', (req, res) => {
@@ -44,11 +45,7 @@ app.post('/post-data', (req, res) => {
         input2,
         input3
     }
-    console.log(`responding with: 
-        ${payload.message},
-        ${payload.input1},
-        ${payload.input2}, 
-        ${payload.input3}`
+    console.log(`responding with: ${payload.message}, ${payload.input1}, ${payload.input2}, ${payload.input3}`
     );
     res.send(payload);
 })
