@@ -22,6 +22,12 @@ app.post('/post-data', (req, res) => {
         input2,
         input3
     }
+    console.log(`responding with: 
+        ${payload.message},
+        ${payload.input1},
+        ${payload.input2}, 
+        ${payload.input3}`
+    );
     res.send(payload);
 })
 
