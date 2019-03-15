@@ -15,10 +15,12 @@ app.get('/', (req, res) => {
 app.post('/post-data', (req, res) => {
     let input1 = req.body.input1
     let input2 = req.body.input2
+    let input3 = req.body.input3
     let payload = {
         message: "Received these inputs",
         input1,
         input2,
+        input3
     }
     res.send(payload);
 })
