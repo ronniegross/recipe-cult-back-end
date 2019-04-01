@@ -1,4 +1,5 @@
 const express = require('express');
+const clients = require('../data/clients');
 const router = express.Router();
 
 router.get('/', (req, res) => {
@@ -6,25 +7,6 @@ router.get('/', (req, res) => {
 });
 
 router.get('/get-clients', (req, res) => {
-    const clients = [{
-       name: 'Facebook', 
-       email: "markzuck@gmail.com", 
-       phoneNumber: "123-234-3456", 
-       projectStatus: "Planning"
-    },
-    {
-        name: 'Google', 
-        email: "google@gmail.com", 
-        phoneNumber: "845-153-2649", 
-        projectStatus: "Complete"
-     },
-     {
-        name: 'Amazon', 
-        email: "JeffBezos@gmail.com", 
-        phoneNumber: "123-234-3456", 
-        projectStatus: "In Progress"
-     }
-    ]
     console.log(`responding with data for clients ${clients[0].name}, ${clients[1].name}, and ${clients[2].name}`)
     res.send(clients);
 });
