@@ -12,7 +12,7 @@ router.get('/get-clients', (req, res) => {
 });
 
 router.post('/post-data', (req, res) => {
-    const payload = requestService.createInputResponse(req.body);
+    const payload = requestService.createResponseFromInput(req.body);
     res.send(payload);
 });
 

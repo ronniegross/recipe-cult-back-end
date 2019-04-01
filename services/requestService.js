@@ -1,4 +1,4 @@
-const createInputResponse = (requestBody) => {
+const createResponseFromInput = (requestBody) => {
     const input1 = requestBody.input1
     const input2 = requestBody.input2
     const input3 = requestBody.input3
@@ -12,5 +12,5 @@ const createInputResponse = (requestBody) => {
 }
 
 module.exports = {
-    createInputResponse
+    createResponseFromInput
 }
