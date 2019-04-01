@@ -1,5 +1,5 @@
 const express = require('express');
-const clients = require('../data/clients');
+const clients = require('../data/clientData');
 const router = express.Router();
 
 router.get('/', (req, res) => {
