@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
 
 router.get('/get-clients', (req, res) => {
     res.send(clients);
+    console.log('sup')
 });
 
 router.post('/post-data', (req, res) => {
